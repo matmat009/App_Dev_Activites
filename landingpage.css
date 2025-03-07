@@ -1,0 +1,123 @@
+/* General Page Styles */
+body {
+    font-family: sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px;
+    margin-top: 90px;
+}
+
+/* Left Section (Fixed Profile) */
+.left-section {
+    width: 35%;
+    padding: 20px;
+    position: sticky;
+    top: 20px; /* Adjusted since navbar is removed */
+    height: fit-content;
+    text-align: justify;
+}
+
+/* Right Section (Scrollable) */
+.right-section {
+    width: 65%;
+    padding: 20px;
+}
+
+/* Profile Image */
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Name Styling */
+.name {
+    font-size: 1.7em;
+    margin-bottom: 10px;
+    background-color: #007e80;
+    padding: 5px;
+}
+
+/* Location & Bio */
+.course, .bio {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+/* By-Day Section */
+.by-day {
+    font-size: 1em;
+}
+
+.by-day ul {
+    padding-left: 20px;
+}
+
+/* Principles Grid */
+/* Principles Grid */
+.principles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Keeps grid layout */
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* Principle Cards - Clickable */
+.principle-card {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none; /* Removes underline */
+    color: #fff; /* Ensures text remains visible */
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hover Effect */
+.principle-card:hover {
+    background-color: #007e80; /* Changes color on hover */
+    transform: scale(1.05); /* Slight enlargement */
+}
+
+/* Ensures the whole card is clickable */
+.principle-card a {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Headings */
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
